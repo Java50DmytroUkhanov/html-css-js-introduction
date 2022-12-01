@@ -13,15 +13,13 @@ body {
 
 }
 .logo {
+    background-color:rgba(216, 71, 13, 0.619) ;
     display: block;
     text-align: center;
     font-size: 1.5em;
     text-transform: uppercase;
-    font-style: italic;
-
-
-   
-   
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: red 0.1em 0.2em 0.1em ;
     
      
 }
@@ -35,35 +33,42 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
+   
 
 }
 .details-image{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  
 
-    width: 60vw;
-  height: 50vw;
-  border-radius: 20px/30px;
-  margin-top: 2vw;
+  
 
 
 }
 .details-title {
   
-    display: block;
-    background-color: rgba(121, 60, 161, 0.413);
-     font-style: oblique;
-     font-size: large;
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-shadow: rgba(0, 0, 0, 0.598) 0.1em 0.2em 0.1em ;
+ 
  
    
 
 }
 .thumbnails-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
     max-height: 30vh;
     overflow-y: scroll;
-    list-style: none;
-    justify-content :space-around;
+    justify-content:space-around;
     padding-left: 0;
+    
 
 }
 .thumbnails-item {
@@ -71,11 +76,9 @@ body {
     flex-direction: column;
     border: solid 2px rgba(95, 95, 187, 0.402);
     margin-top: 2vh;
-   border-radius: 5vw;
-   
-
-
-    
+    border-radius: 5vw;
+    overflow: hidden;
+       
 
 }
 .thumbnails-anchor{
@@ -86,33 +89,26 @@ body {
 }
 
 .thumbnails-image{
+    display: block;
     width: 25vw;
     height: 15vw;
-    border-top-left-radius: 5vw;
-    border-top-right-radius: 5vw;
-  
-    margin-bottom: -1.25vw;
+    
+
+    
+    
    
   }
 .thumbnails-title{
-   padding-top: 1.5vw;
     display:block;
-  
-    text-align: center ;
     background-color: blueviolet;
-    border-bottom-left-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    width: 25vw;
+     width: 25vw;
     height: 3vh;
-    
-    text-align: center;
-    
-   
-   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    text-align:center;
+    font-size: medium;
 
-    
-
-    
+         
     
 }
 

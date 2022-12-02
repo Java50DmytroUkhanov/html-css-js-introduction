@@ -9,17 +9,20 @@ body {
     display:flex;
     flex-direction: column; 
     margin: 0%;
+    background-image: url(styles/page9.jpg);
       
 
 }
 .logo {
-    background-color:rgba(216, 71, 13, 0.619) ;
+ 
     display: block;
     text-align: center;
     font-size: 1.5em;
-    text-transform: uppercase;
+   
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: red 0.1em 0.2em 0.1em ;
+    text-shadow: rgba(36, 137, 237, 0.434) 0.1em 0.2em 0.1em ;
+   
+    
     
      
 }
@@ -44,7 +47,7 @@ body {
   
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
-  
+  box-shadow:black 0.1em 0.2em 0.1em;
 
   
 
@@ -91,7 +94,7 @@ body {
 .thumbnails-image{
     display: block;
     width: 25vw;
-    height: 15vw;
+    height: 20vw;
     
 
     
@@ -99,14 +102,17 @@ body {
    
   }
 .thumbnails-title{
-    display:block;
-    background-color: blueviolet;
+    display:inline-block;
+    background-color: rgba(50, 53, 206, 0.527);
      width: 25vw;
     height: 3vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-items: center;
     text-align:center;
     font-size: medium;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   
 
          
     

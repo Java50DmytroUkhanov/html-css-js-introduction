@@ -1,3 +1,14 @@
+@font-face {
+    font-family: airstream;
+    src: url(fonts/Airstream-webfont.svg);
+    src: url(fonts/Airstream-webfont.woff);
+}
+@font-face {
+    font-family: lakeshor;
+    src: url(fonts/LAKESHOR-webfont.svg);
+    src: url(fonts/LAKESHOR-webfont.woff);
+}
+
 html {
     height:100%
     
@@ -5,11 +16,11 @@ html {
 }
 body {
     height: 100%;
-    background-color: azure;
+    background-color: antiquewhite;
     display:flex;
     flex-direction: column; 
     margin: 0%;
-    background-image: url(styles/page9.jpg);
+    
       
 
 }
@@ -17,18 +28,23 @@ body {
  
     display: block;
     text-align: center;
-    font-size: 1.5em;
-   
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-family: lakeshor;
     text-shadow: rgba(36, 137, 237, 0.434) 0.1em 0.2em 0.1em ;
-   
+    text-transform: uppercase;
     
     
      
 }
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .main-class{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 
 }
 .details-container{
@@ -36,17 +52,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+       
    
-   
-
 }
 .details-image{
   display: inline-block;
   width: 100%;
   height: 100%;
-  
-  border-bottom-right-radius: 15%;
-  border-bottom-left-radius: 15%;
+  border-radius: 15%;
   box-shadow:black 0.1em 0.2em 0.1em;
 
   
@@ -55,7 +68,7 @@ body {
 }
 .details-title {
   
-    display: inline-block;
+    display:block;
     font-family:'Courier New', Courier, monospace;
     font-size: xx-large;
     text-shadow: rgba(0, 0, 0, 0.598) 0.1em 0.2em 0.1em ;
@@ -67,19 +80,21 @@ body {
 .thumbnails-list{
     display: flex;
     flex-wrap: wrap;   
-    max-height: 30vh;
+    max-height: 37vh;
     overflow-y: scroll;
     justify-content:space-around;
     padding-left: 0;
+    list-style: none;
+    margin-top: 2vh;
     
 
 }
 .thumbnails-item {
     display: flex;
     flex-direction: column;
-    border: solid 2px rgba(95, 95, 187, 0.402);
-    margin-top: 2vh;
-    border-radius: 5vw;
+    border: solid 2px rgba(109, 187, 95, 0.402);
+    margin-top: 4vw;
+    border-radius: 25%;
     overflow: hidden;
        
 
@@ -87,7 +102,6 @@ body {
 .thumbnails-anchor{
 
     
-
      
 }
 
@@ -96,25 +110,83 @@ body {
     width: 25vw;
     height: 20vw;
     
-
-    
     
    
   }
 .thumbnails-title{
     display:inline-block;
-    background-color: rgba(50, 53, 206, 0.527);
-     width: 25vw;
+    background-color: rgba(13, 17, 247, 0.717);
+    width: 25vw;
     height: 3vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    align-items: center;
     text-align:center;
     font-size: medium;
     text-decoration: none;
     color: rgb(0, 0, 0);
-   
+    
+           
+    
+}
+@media (min-width: 560px) {
+    .main-class {
+        flex-direction: row;
+       
+       
 
-         
+    }
+    .thumbnails-list {
+       
+        flex-grow: 0.3;
+        order: -1;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 80vh;
+        justify-content:flex-start;
+       
+        align-items:flex-start;
+    
+              
+       
+       
+
+    }
+    .thumbnails-item {
+        min-height: 23vw;
+        margin-top: 2vw;
+      
+    }
+    .thumbnails-title {
+        height: 3vw;
+         text-align:center;
+        font-size: medium;
+        text-decoration: none;
+        display:inline-block;
+      
+       
+       
+    }
+    .details-image{
+
+        display: inline-block;
+        width: 45vw;
+        height: 35vw;
+        border-radius: 15%;
+        box-shadow:black 0.1em 0.2em 0.1em;
+      
+    }
+       
+    .thumbnails-image{
+        display: flex;
+        width: 30vh;
+        height: 14vw;
+        
+        
+       
+      }
+   
+  
+
+}
+@media (min-width: 1000px) {
     
 }
 

@@ -34,12 +34,16 @@ body {
     display:flex;
     flex-direction: column; 
     margin: 0%;
-    background: url(../images/Ice.jpg);
+}
+
+ .back {
+        background: url(../images/Ice.jpg);
     
+    } 
     
       
 
-}
+
 .logo {
  
     display: block;

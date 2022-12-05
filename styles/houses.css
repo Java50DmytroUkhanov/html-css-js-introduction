@@ -34,14 +34,13 @@ body {
     display:flex;
     flex-direction: column; 
     margin: 0%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.701),  #BC8F8F,#5F9EA0) ;
+
 }
 
- .back {
-        background: url(../images/Ice.jpg);
-    
-    } 
-    
-      
+
+   
 
 
 .logo {

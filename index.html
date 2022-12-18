@@ -11,17 +11,25 @@
 <body > 
 
         
-    <header class="logo">
-       
-        <h2 >Houses-Gallery </h2>
+    <header class="logo hidden ">
+        <h2 >Houses-Gallery </h2>   
+        <div class="box-play">
+            <button id="play" onclick="playDetails() "> &#9654</button> 
+            <button id="pause" onclick="playsDetails() "> &#8545</button> 
+
+        </div>    
         
+            
+            
         
     </header>
     <main class="main-class hidden">
-        <section class="details-container" >
-             <div class="details-frame" >
-               <button id="hide-button" onclick="hideDetails()" > X </button>
-                <img src="images/page1.jpg" class="details-image">
+        
+         <section class="details-container" >
+            <audio id="audio" src="images/lofi.mp3" ></audio>
+            <div class="details-frame">
+            <button id="hide-button" onclick="hideDetails()" > X </button>
+              <img src="images/page1.jpg" class="details-image">
                 <span class="details-title"> Your Dreams...</span>
 
             </div>

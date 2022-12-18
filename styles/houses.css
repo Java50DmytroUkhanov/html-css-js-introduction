@@ -103,6 +103,9 @@ h2 {
    */
    justify-content: space-around;
    background-color: rgba(60, 57, 245, 0.132);
+ 
+   
+
 }
 
 
@@ -238,7 +241,8 @@ h2 {
 }
 
 .hidden .thumbnails-list {
-    max-height: 70vh;
+    max-height: 80vh;
+ 
     
 
 }
@@ -474,29 +478,41 @@ h2 {
         height: 2px;
 
     }
+
+
+
     .main-class.hidden {
-        --thumbnails-image-width: 15vw;
-        --thumbnails-image-height: 10vw;
-        --thumbnails-title-height: calc(var(--thumbnails-image-height) * 0.25);
+        --thumbnails-image-width: 13vw;
+        --thumbnails-image-height: 18vh;
+        --thumbnails-title-height: calc(var(--thumbnails-image-height) * 0.30);
+         height: 40vw;
+        
+       
+        
        
     }
 
     .thumbnails-item {
-        display: block;
+         display: block; 
         min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
-        margin-top: 1rem;
+     
         min-width: var(--thumbnails-image-width);
+
         
     
+    }
+    .hidden .thumbnails-item{
+        margin-left: 2vw;
+      
     }
   
     #play{
    
         max-height: 6vw;
-        max-width: 8vw;
+        max-width: 6vw;
         text-align: center;
         right: 5vw;
-         font-size: 2vw;
+         font-size: 1.5vw;
         
         align-items: center;
         background-color: rgba(245, 245, 220, 0);
@@ -526,6 +542,18 @@ h2 {
      right: 4vw;
     
    
+}
+.hidden .thumbnails-title{
+    font-size: larger;
+}
+.hidden .thumbnails-list{
+    margin: 2vh;
+    justify-content: flex-start;
+    margin-right: 3vw;
+    width: 95vw;
+    
+          
+    
 }
 
 

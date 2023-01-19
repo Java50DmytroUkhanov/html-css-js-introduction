@@ -78,7 +78,7 @@ function sortEmployeesByAge(employees){
     //TODO
     //returns array of Employee objects sorted by age in ascending order
     const ageEmployees = employees.sort(function(empl,empl2){
-        return empl.bithYear - empl2.bithYear;
+        return empl2.bithYear - empl.bithYear;
     })
    return ageEmployees;
 
